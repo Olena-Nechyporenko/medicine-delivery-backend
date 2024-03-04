@@ -4,6 +4,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const drugsRouter = require("./routes/api/drugs");
 const ordersRouter = require("./routes/api/orders");
+const shopsRouter = require("./routes/api/shops");
 
 dotenv.config();
 
@@ -15,6 +16,7 @@ app.use(logger(formatsLogger));
 app.use(cors());
 app.use(express.json());
 
+app.use("/api/shops", shopsRouter);
 app.use("/api/drugs", drugsRouter);
 app.use("/api/orders", ordersRouter);
 
