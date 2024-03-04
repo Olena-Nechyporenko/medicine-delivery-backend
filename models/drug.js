@@ -23,6 +23,10 @@ const drugSchema = new Schema(
       type: String,
       required: true,
     },
+    shopId: {
+      type: String,
+      required: true,
+    },
   },
   { versionKey: false, timestamps: true }
 );
