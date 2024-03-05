@@ -11,6 +11,16 @@ const getDrugsByShopId = async (req, res) => {
   res.json(result);
 };
 
+const getDrugById = async (req, res) => {
+  const { drugId } = req.params;
+  const result = await Drug.findById(drugId);
+  if (!result) {
+    throw HttpError(404);
+  }
+  res.json(result);
+};
+
 module.exports = {
   getDrugsByShopId: ctrlWrapper(getDrugsByShopId),
+  getDrugById: ctrlWrapper(getDrugById),
 };
