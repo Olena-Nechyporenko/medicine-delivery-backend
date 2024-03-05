@@ -22,7 +22,7 @@ const drugSchema = Joi.object({
   _id: Joi.string().required(),
   name: Joi.string().required(),
   pharmacy: Joi.string().required(),
-  quantity: Joi.string().required(),
+  quantity: Joi.number().required(),
 });
 
 const orderSchema = Joi.object({
