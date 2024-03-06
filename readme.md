@@ -1,6 +1,8 @@
-### Команди:
+### Commands:
 
-- `npm start` &mdash; старт сервера в режимі production
-- `npm run start:dev` &mdash; старт сервера в режимі розробки (development)
-- `npm run lint` &mdash; запустити виконання перевірки коду з eslint, необхідно виконувати перед кожним PR та виправляти всі помилки лінтера
-- `npm lint:fix` &mdash; та ж перевірка лінтера, але з автоматичними виправленнями простих помилок
+- `npm start` &mdash; start the server in production mode
+- `npm run start:dev` &mdash; start the server in development mode
+
+### Deployment:
+
+Project deployed on render.com [https://medicine-delivery-backend-x5xv.onrender.com](https://medicine-delivery-backend-x5xv.onrender.com)
